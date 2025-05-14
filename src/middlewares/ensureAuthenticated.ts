@@ -30,6 +30,7 @@ export function ensureAuthenticated(
         }
 
 
+        return next()
     } catch (error) {
         throw new AppError("JWT invalid token!")
     }
